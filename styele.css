@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid rgb(219, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header h3 {
+    font-size: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo>svg {
+    color: rgb(70, 70, 240);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.auth-buttons a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    padding: 10px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* 메인 */
+
+main {
+    background-color: rgb(227, 243, 249);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 100px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ai {
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgb(59, 130, 246);
+    background-color: rgb(219, 234, 254);
+    color: rgb(37, 99, 235);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.text:nth-of-type(2) {
+    color: rgb(37, 99, 235);
+}
+
+.left-container > p {
+    color: rgb(107, 114, 128);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.left-container > div {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.now {
+    padding: 12px 24px;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.now:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.sample {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(209, 213, 219);
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sample:hover {
+    background-color: rgb(243, 244, 246);
+}
+
+.right-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid 섹션 */
+.technolgy {
+    background-color: rgb(227, 243, 249);
+    padding: 80px 100px;
+}
+
+.technolgy h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.technolgy .title {
+    text-align: center;
+    color: rgb(107, 114, 128);
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid > div {
+    height: 210px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 12px;
+    background-color: white;
+    padding: 24px;
+}
+
+.grid>div:hover {
+    border: 1px solid blue;
+    box-shadow: inset;
+}
+
+.four {
+    background-color: rgb(243, 244, 246);
+    padding: 80px 100px;
+    text-align: center;
+}
+
+.four h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.four > p {
+    color: rgb(107, 114, 128);
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 72px;
+    height: 72px;
+    background-color: rgb(37, 99, 235);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.number {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(37, 99, 235);
+    opacity: 0.1;
+
+    z-index: 1;
+}
+
+.step h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: rgb(107, 114, 128);
+    font-size: 10px;
+    text-align: center;
+}
+
+.blue-box {
+    height: 386px;
+    background-color: blue;
+}
+
+.blue-box h1 {
+    color: white;
+    text-align: center;
+    line-height: 150px;
+}
+
+.blue-box p {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.end {
+    position: absolute;
+    top: 2330px;
+    left: 30px;
+}
+
+.end p {
+    font-size: 10px;
+}
+
+.card {
+    margin-top: 30px;
+}
+
+.free-start {
+    margin-left: 530px;
+    width: 196px;
+    height: 48px;
+    background-color: white;
+    border: none;
+}
+
+.add {
+    width: 162px;
+    height: 50px;
+    background-color: blue;
+    border: 1px solid white;
+    color: white;
+}
+
+footer {
+    height: 328px;
+    background-color: black;
+    color: white;
+}
+
+footer ul {
+   display: inline-block;
+   gap: 50px;
+   list-style-type: none;
+   margin-left: 345px;
+   margin-right: 10px;
+   margin-top: 30px;
+}
+
+.bottom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
